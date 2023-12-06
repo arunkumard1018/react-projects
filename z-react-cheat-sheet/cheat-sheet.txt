@@ -1,0 +1,22 @@
+=> npx create-react-app <App-Name>  (the package Excuter will install react and Create React App)
+=> cd to <App-Name> and 
+=>> npm start (to run App in Development mode)
+==> npm test (run  unit tests in watch mode)
+==> npm build (to create optimized production build)
+
+=> npm install --save react-router-dom (to add dependency to the react project)
+
+=============Trouble shoot=======================================================
+launch cmd as adminstrator
+unistall react globaly by >> npm uninstall -g create-react-app
+clear npx cache by >> npx clear-npx-cache
+and >> npx create-react-app <App-Name> (to create app)
+
+=================================================================================
+
+
+
+
+
+
+
