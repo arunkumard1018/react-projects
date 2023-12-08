@@ -20,8 +20,10 @@ export default function AuthProvider({ children }) {
         }
     }
 
+    const logout = () => {setAuthenticated(false)}
+
     return(
-        <AuthContext.Provider value={ {isAuthenticated, login} }>
+        <AuthContext.Provider value={ {isAuthenticated, login, logout} }>
             {children}
         </AuthContext.Provider>
     )
