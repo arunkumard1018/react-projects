@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fixed Right Aside with Scrollable Left Content</title>
+</head>
+<body class="font-sans bg-gray-100">
+
+    <!-- Main Section -->
+    <div class="flex">
+
+        <!-- Left Content (Scrollable) -->
+        <div class="flex-1 p-4 overflow-y-auto">
+            <!-- Add your scrollable content here -->
+            <h1 class="text-3xl font-bold mb-4 text-black">Left Content</h1>
+        </div>
+
+        <!-- Right Aside (Fixed) -->
+        <aside class="bg-blue-500 text-white w-1/4 min-h-screen fixed p-4">
+            <h2 class="text-lg font-bold">Right Aside</h2>
+            <!-- Add your right aside content here -->
+        </aside>
+
+    </div>
+
+</body>
+</html>

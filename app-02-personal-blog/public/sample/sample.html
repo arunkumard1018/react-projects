@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Responsive Navbar</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-black py-6">
+        <div class="flex justify-between items-center md:mx-60">
+
+            <!-- Logo -->
+            <a href="#" class="text-white text-lg font-bold"><img src="../channel-logo-removebg.png" alt=""></a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-4 text-black justify-center items-center">
+                <a href="#" class="text-black hover:underline">Our Story</a>
+                <a href="#" class="text-black hover:underline">MemberShip</a>
+                <a href="#" class="text-black hover:underline">write</a>
+                <a href="#" class="text-black hover:underline">Sign in</a>
+                <a href="#"><button
+                        class="bg-green-500 px-5 py-2 rounded-full hover:bg-green-600 text-white">Register</button></a>
+            </div>
+
+            <!-- Mobile Menu Button (Visible on Small Screens) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                    <img  src="../bars-solid.svg" class="mx-3 w-6">
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden bg-white p-4 hidden space-y-2 ">
+        <a href="#" class="text-black hover:underline block mx-3">Our Story</a>
+        <a href="#" class="text-black hover:underline block mx-3">MemberShip</a>
+        <a href="#" class="text-black hover:underline block mx-3">write</a>
+        <a href="#" class="text-black hover:underline block mx-3">Sign in</a>
+        <a href="#"class="block">
+            <button class="bg-green-500 px-5 py-2 rounded-full hover:bg-green-600 text-white">Register</button></a>
+    </div>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
