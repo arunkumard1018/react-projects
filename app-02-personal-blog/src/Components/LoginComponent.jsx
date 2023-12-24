@@ -32,7 +32,7 @@ function LoginComponent() {
     return (
         <div className="LoginComponent">
 
-            <div className="flex items-center justify-center min-h-screen">
+            <div className="flex items-center justify-center mt-40">
                 <div className="w-full max-w-md" >
                     <div className="text-3xl font-bold mb-4 text-center">Login</div>
                     {showErrorMessage && <div className="text-red-600  text-center">Invalid Credintails ! please check</div>}
@@ -74,3 +74,4 @@ function LoginComponent() {
     )
 }
 export default LoginComponent
+

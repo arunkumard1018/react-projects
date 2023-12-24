@@ -1,13 +1,16 @@
 import CatogoryContainer from './CatogoryContainer';
 import PostContainer from './PostContainer';
+import ViewBlogPost from './ViewBlogPost';
 
 
-function MainContentContainer() {
+function MainContentContainer(props) {
+    
     return (
-        <div className="conatiner md:mx-[350px] ">
+        <div className="conatiner md:mx-[350px]">
             <div className="contentConatiner md:flex justify-between relative">
-                <PostContainer />
+                <PostContainer {...props}/>
                 <CatogoryContainer />
+                {/* <ViewBlogPost/> */}
             </div>
         </div>
     )
