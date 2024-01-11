@@ -6,6 +6,7 @@ import AuthProvider, { useAuth } from "./Security/AuthContext"
 import HeaderComponent from "./HeaderComponent"
 import LogoutComponent from './LogoutComponent'
 import ViewBlogPost from './ViewBlogPost'
+import BlogPost from './BlogPost'
 
 function BlogApp() {
     const postDetails = {
@@ -34,7 +35,8 @@ function BlogApp() {
                         <Route path="/login" element={<LoginComponent />} />
                         <Route path="/register" element={<RegistrationComponent />} />
                         <Route path="/" element={<MainContentContainer postDetails={postDetails} />} />
-                        <Route path="/logout" element={<LogoutComponent />} />
+                        <Route path="/logout" element={<LogoutComponent />} /> 
+                        <Route path="/post" element={<BlogPost />} /> 
                         
                         <Route path="/viewPost/:postId" element={
                             <AuthenticatedRoute>

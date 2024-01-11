@@ -20,7 +20,7 @@ function HeaderComponent() {
                     <div className="hidden md:flex space-x-4 text-black justify-center items-center">
                         <a href="/" className="text-black hover:underline">Our Story</a>
                         <a href="/" className="text-black hover:underline">MemberShip</a>
-                        {isAuthenticated && <a href="/" className="text-black hover:underline">write</a>}
+                        {isAuthenticated && <a href="/post" className="text-black hover:underline">write</a>}
 
                         {!isAuthenticated && <Link to="/login" className="text-black hover:underline" id="signin-btn">Sign in</Link>}
                         {!isAuthenticated && <Link to="/register"><button
@@ -40,6 +40,7 @@ function HeaderComponent() {
                         </button>
                     </div>
 
+                    
                 </div>
             </nav>
 
