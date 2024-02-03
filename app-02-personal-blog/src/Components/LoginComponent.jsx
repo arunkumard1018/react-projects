@@ -18,7 +18,7 @@ function LoginComponent() {
     }
     function HandleLoginSubmit() {
         
-        if(authContext.authenticate(userName,password)){
+        if(authContext.login(userName,password)){
             navigate(`/`)
         }else{
             console.log("Authentication failure")
